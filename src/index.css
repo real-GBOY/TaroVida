@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: auto; /* Lenis handles smooth scroll */
+  }
+
+  body {
+    font-family: 'DM Sans', Inter, sans-serif;
+    color: #574f41;
+    background-color: #e7e7d3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    color: #3a1c36;
+    line-height: 1.2;
+  }
+}
+
+@layer components {
+  .tv-card {
+    @apply rounded-xl;
+  }
+}
